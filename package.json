@@ -2,24 +2,47 @@
   "name": "core-service",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
-  },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && babel-node server.js",
+    "debug": "babel-node server.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "./node_modules/react-scripts/config/eslint.js",
-    "env": {
-      "mocha": true
-    },
-    "rules": {
-      "strict": 0
-    }
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-redux": "^4.4.5",
+    "react-transform-hmr": "^1.0.4",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.77.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-register": "^6.9.0",
+    "babel-runtime": "^6.9.2",
+    "chokidar": "^1.7.0",
+    "css-loader": "^0.23.1",
+    "css-modules-require-hook": "^4.0.1",
+    "dotenv": "^4.0.0",
+    "eslint": "^3.1.0",
+    "eslint-plugin-react": "^5.2.2",
+    "react-scripts": "^1.0.17",
+    "style-loader": "^0.13.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^1.12.2",
+    "webpack-hot-middleware": "^2.21.0"
   }
 }
